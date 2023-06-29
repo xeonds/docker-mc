@@ -9,6 +9,7 @@ case $action in
     docker run -d \
       -p 25565:25565 \
       -v $(pwd)/world:/app/world \
+      -v $(pwd)/server.jar:/app/server.jar \
       -v $(pwd)/server.properties:/app/server.properties \
       --name mc \
       mc-server
